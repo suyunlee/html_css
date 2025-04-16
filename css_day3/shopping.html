@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox {
+            display: flex;
+            padding: 10px;
+            gap:10px;
+            background-color: lightgray;
+        }
+        #flexcol {
+            flex-direction: column;
+            background-color: white;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .flexbox {
+                flex-wrap: wrap;
+            }
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .product_description {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+        .sale {
+            border-radius: 15px;
+            color: white;
+            background-color: red;
+            width: max-content;
+            padding: 2px;
+        }
+        .product {
+            border-top: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexbox">
+        <div class="flexbox" id="flexcol">
+            <img src="food1.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">피자</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food2.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">윙봉</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food3.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">콜라</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food4.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">해장국</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food5.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">초콜릿</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food6.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">아이스크림</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food7.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">사탕</div>
+        </div>
+        <div class="flexbox" id="flexcol">
+            <img src="food8.jpg">
+            <div class="product_description">
+                <div class="sale">행사상품</div>
+                <div><strong>마트직송</strong></div>
+            </div>
+            <div class="product">치즈 돈까스</div>
+        </div>
+    </div>
+</body>
+</html>

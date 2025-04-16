@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+            /* ease linear ease-in-out */
+        }
+        .box:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .blinking {
+            animation: blink 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <button class="box">버튼</button>
+    <p class="blinking">반짝반짝</p>
+</body>
+</html>
