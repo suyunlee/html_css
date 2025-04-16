@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이스트소프트 오르미 11기</title>
+    <style>
+        @font-face {
+            font-family: 'BMHANNAPro';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+        body {
+            background-color: #EAEAEA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        * {
+            font-family: Noto Sans KR;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 1000px;
+            gap: 19px;
+        }
+        .container2 {
+            display: flex;
+            gap: 10px;
+        }
+        header {
+            display: flex;
+            font-family: BMHANNApro;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            height: 240;
+            width: 100%;
+            padding-top: 90px;
+            padding-right: 67px;
+            padding-bottom: 90px;
+            padding-left: 67px;
+            box-sizing: border-box;
+            background: #D9D9D9;
+        }
+        main {
+            display: flex;
+            gap: 19px;
+            width: 100%;
+        }
+        section {
+            background-color: white;
+            gap: 40px;
+            padding: 32px;
+            flex-grow: 2;
+        }
+        ul, .fontbold{
+            font-size: 32px;
+            font-weight: 700;
+        }
+        li {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        table, th, td {
+            border: 1px solid #EBEBEB;
+            border-collapse: collapse;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 100%;
+            height: 50px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+        }
+        thead {
+            background-color: #d3d3d3;
+        }
+        nav {
+            background-color: white;
+            gap: 10px;
+            padding-top: 38px;
+            padding-right: 46px;
+            padding-bottom: 38px;
+            padding-left: 46px;
+            flex-grow: 1;
+        }
+        input[type="submit"] {
+            background: #1F1F1F;
+            color: white;
+            height: 78px;
+            width: 100%;
+            padding: 16px 47px 16px 47px;
+            border-radius: 16px;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+        img {
+            object-fit: cover;
+        }
+        .imgsize {
+            width: 100%;
+            height: 400px;
+        }
+        footer {
+            width: 100%;
+            background-color: white;
+            height: 252px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; */
+            gap: 10px;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .flex-container {
+                padding: 5% 10% 5% 10%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>이스트소프트 오르미 11기</header>
+        <main>
+            <section>
+                <ul>오르미 <span style="color:#0066FF;">11기의 포인트</span>
+                    <li>100% 실시간 온라인 강의로 진행된다.</li>
+                    <li>이스트소프트 현직 개발자의 멘토링을 통한 현장형 인재 양성 과정이다.</li>
+                    <li>수료 후 취업까지 전 과정을 지원한다.</li>
+                </ul>
+                <div class="fontbold">기간</div>
+                <table>
+                    <thead>
+                        <th>시작일</th>
+                        <th>종료일</th>
+                    </thead>
+                    <tbody>
+                        <td>2025.04.08</td>
+                        <td>2025.08</td>
+                    </tbody>
+                </table>
+            </section>
+            <nav>
+                <ul>내용
+                    <li>알고리즘</li>
+                    <li>Java</li>
+                    <li>DB</li>
+                    <li>WEB</li>
+                    <li>네트워크</li>
+                </ul>
+            </nav>
+        </main>
+        <input type="submit" value="신청하러 가기">
+        <img src="image 8.png" class="imgsize">
+    </div><br>
+    <footer>
+        <div class="container2">
+            <div>고객센터 안내</div>
+            <div style="font-weight: 700;">개인정보처리방침</div>
+        </div>
+        <div style="color: #AAAAAA;">(주)이스트소프트</div>
+        <div class="container2">
+            <img src="image 6.png">
+            <img src="image 7.png">
+        </div>
+    </footer>
+</body>
+</html>

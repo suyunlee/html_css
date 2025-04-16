@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgb(233, 233, 233);
+            gap: 20px;
+            padding: 20px;
+            }
+        .card {
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            height: 230px;
+            width: 280px;
+            background-color: white;
+            box-shadow: 3px 3px 10px rgb(207, 207, 207);
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+        .card_top {
+            background-color: rgb(44, 153, 255);
+            color: white;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            padding: 10px;
+            font-size : 20px
+        }
+        .card_middle {
+            border-bottom: 1px solid lightgray;
+            padding: 10px;
+        }
+        .card_bottom {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+        }
+        .card_button {
+            display: flex;
+            border-radius: 5px;
+            background-color: rgb(44, 153, 255);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <div class="card_top"><strong>Card1</strong></div>
+            <div class="card_middle">This is the content for card1.
+                Flexbox makes it easy to align and distribute space among items in a container.
+            </div>
+            <div class="card_bottom">
+                <div class="card_button">Read More</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_top"><strong>Card2</strong></div>
+            <div class="card_middle">This is the content for card2.
+                Flexbox makes it easy to align and distribute space among items in a container.
+            </div>
+            <div class="card_bottom">
+                <div class="card_button">Read More</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_top"><strong>Card3</strong></div>
+            <div class="card_middle">This is the content for card3.
+                Flexbox makes it easy to align and distribute space among items in a container.
+            </div>
+            <div class="card_bottom">
+                <div class="card_button">Read More</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_top"><strong>Card4</strong></div>
+            <div class="card_middle">This is the content for card4.
+                Flexbox makes it easy to align and distribute space among items in a container.
+            </div>
+            <div class="card_bottom">
+                <div class="card_button">Read More</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_top"><strong>Card5</strong></div>
+            <div class="card_middle">This is the content for card5.
+                Flexbox makes it easy to align and distribute space among items in a container.
+            </div>
+            <div class="card_bottom">
+                <div class="card_button">Read More</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_top"><strong>Card6</strong></div>
+            <div class="card_middle">This is the content for card6.
+                Flexbox makes it easy to align and distribute space among items in a container.
+            </div>
+            <div class="card_bottom">
+                <div class="card_button">Read More</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

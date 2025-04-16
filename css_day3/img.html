@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: grid;
+            background-image: url(./dog.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 600px;
+            height: 400px;
+        }
+        img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+        
+        #fill {
+            object-fit: fill;
+        }
+        #none {
+            object-fit: none;
+        }
+        #contain {
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <p>cover</p>
+    <img src="dog.jpg">
+    <p>fill</p>
+    <img id="fill" src="dog.jpg">
+    <p>contain</p>
+    <img id="contain" src="dog.jpg">
+    <p>none</p>
+    <img id="none" src="dog.jpg">
+</body>
+</html>

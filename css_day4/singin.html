@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        form {
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        legend {
+            font-weight: bolder;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        input {
+            border-radius: 5px;
+            border: 1px solid gray;
+            height: 20px;
+        }
+        label {
+            font-weight: bolder;
+        }
+        input[type="submit"] {
+            padding: 10px 100px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: #a8a8a8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.html" method="get">
+        <legend>회원 가입</legend>
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" placeholder="사용자 이름" require><br><br>
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" placeholder="사용자 이메일" required><br><br>
+
+        <label for="password">비밀번호: </label>
+        <input type="password" id="password" name="password" placeholder="비밀번호" required><br><br>
+        <label for="gender">성별:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">남성</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">여성</label><br><br>
+        <label for="country">국가:</label>
+        <select id="country" name="country" required>
+            <option value="">선택</option>
+            <option value="us">미국</option>
+            <option value="kr">한국</option>
+            <option value="uk">영국</option>
+        </select><br><br>
+
+        <label for="message">메세지:</label>
+        <textarea id="message" name="message" placeholder="메세지를 입력해주세요." required></textarea><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">뉴스레터 구독하기</label><br><br>
+        
+        <input type="submit" value="회원가입">
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(66, 66, 66);
+            padding: 10px;
+            gap: 10px;
+            height: 800px;
+        }
+        header {
+            background-color: gray;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        footer {
+            background-color: gray;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .flexbox {
+            display: flex;
+            gap: 10px;
+            flex-grow: 4;
+        }
+        aside, nav {
+            background-color: gray;
+            border-radius: 5px;
+            flex-grow: 1;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        main {
+            background-color: gray;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 10px;
+            flex-grow: 2;
+        }
+        article {
+            background-color: lightgray;
+            border-radius: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <header>header</header>
+        <div class="flexbox">
+            <nav>nav</nav>
+            <main>main
+                <article>article1</article>
+                <article>article2<br><br><br><br></article>
+                <article>article3</article>
+            </main>
+            <aside>aside</aside>
+        </div>
+        <footer>footer</footer>
+    </div>
+
+</body>
+</html>
